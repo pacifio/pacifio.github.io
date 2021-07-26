@@ -15,15 +15,6 @@ body {
   background-color: #0e0b0b;
 }
 
-.bg-primary {
-  background: radial-gradient(
-      37.53% 147.33% at 5.39% 8.57%,
-      rgba(255, 255, 255, 0.021) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    linear-gradient(180deg, #26282a41 0%, #21232510 100%);
-}
-
 .text-shadow-md {
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
 }

@@ -20,8 +20,17 @@
   <body class="font-cabin no-scrollbar">
     <div class="lg:flex lg:relative">
       <div
-        class="min-h-screen bg-primary w-full lg:w-1/2 flex flex-col lg:fixed"
+        class="
+          min-h-screen
+          w-full
+          lg:w-1/2
+          flex flex-col
+          lg:fixed
+          cursor-pointer
+        "
+        id="parent"
       >
+        <canvas id="canvas" style="z-index: -1000; position: absolute"></canvas>
         <div
           class="
             flex-1
@@ -31,18 +40,27 @@
             flex flex-col
             justify-center
             items-start
+            relative
           "
         >
+          <div
+            class="absolute text-sm font-bold text-gray-600"
+            style="top: 30px; left: 0px"
+          >
+            ESC TO RESET
+          </div>
           <h3
             class="
               font-bold
-              text-4xl
-              md:text-5xl
+              text-5xl
               lg:text-6xl
               2xl:text-7xl
-              text-gray-200
+              text-transparent
               tracking-tight
               text-shadow-lg
+              bg-clip-text bg-gradient-to-br
+              from-yellow-50
+              to-red-200
             "
           >
             Hello , I'm Adib Mohsin
@@ -81,7 +99,7 @@
                 class="text-gray-300 font-bold"
                 >The Civil Insight</a
               >
-              .
+              . Now I am working for <span class="text-blue-500">Rexo IT</span>
             </p>
           </div>
 
@@ -99,10 +117,11 @@
               My main field is
               <span class="text-gray-300 font-bold">mobile</span> and
               <span class="text-gray-300 font-bold">web</span> development with
-              some <span class="text-gray-300 font-bold">UI/UX</span> inspection
-              on the go .
+              some
+              <span class="text-gray-300 font-bold">UI/UX</span> craftsmanship
+              and inspection on the go .
             </p>
-            <div class="flex items-center mt-8">
+            <div class="flex items-center mt-12">
               <img
                 src="./img/flutter.svg"
                 alt=""
@@ -301,7 +320,7 @@
                 class="
                   text-2xl
                   2xl:text-3xl
-                  text-green-900
+                  text-blue-900
                   font-extrabold
                   mb-3
                   tracking-wide
@@ -452,16 +471,70 @@
                     text-xl
                     2xl:text-2xl
                     leading-tight
-                    text-gray-800
+                    text-gray-600
                     font-bold
                     mb-2
                   "
                 >
                   Collection of designer flutter apps
                 </div>
-                <div class="flex items-center">
-                  <img src="./img/star.svg" alt="" class="h-4 mr-1" />
-                  <span class="text-sm text-gray-500">482</span>
+              </div>
+            </a>
+
+            <a
+              class="
+                p-6
+                w-full
+                bg-gradient-to-br
+                from-white
+                to-pink-50
+                border border-gray-100
+                rounded-md
+                shadow-sm
+                cursor-pointer
+                transition
+                duration-300
+                transform
+                hover:-translate-y-2 hover:shadow-md
+                flex flex-col
+                justify-between
+                items-start
+                mb-4
+                sm:mb-0
+              "
+              href="https://github.com/pacifio/learning-dom"
+              target="_blank"
+            >
+              <div>
+                <div
+                  class="
+                    text-xs
+                    uppercase
+                    text-gray-500
+                    font-bold
+                    tracking-wide
+                    mb-1
+                  "
+                >
+                  learning_dom
+                </div>
+                <div class="text-lg text-gray-700 font-bold tracking-wide">
+                  20 Jun , 2021
+                </div>
+              </div>
+              <div class="my-10"></div>
+              <div>
+                <div
+                  class="
+                    text-xl
+                    2xl:text-2xl
+                    leading-tight
+                    text-gray-600
+                    font-bold
+                    mb-2
+                  "
+                >
+                  Collection of creative JS projects
                 </div>
               </div>
             </a>
@@ -514,16 +587,12 @@
                     text-xl
                     2xl:text-2xl
                     leading-tight
-                    text-gray-800
+                    text-gray-600
                     font-bold
                     mb-2
                   "
                 >
                   Routing animations for flutter
-                </div>
-                <div class="flex items-center">
-                  <img src="./img/star.svg" alt="" class="h-4 mr-1" />
-                  <span class="text-sm text-gray-500">36</span>
                 </div>
               </div>
             </a>
@@ -576,16 +645,12 @@
                     text-xl
                     2xl:text-2xl
                     leading-tight
-                    text-gray-800
+                    text-gray-600
                     font-bold
                     mb-2
                   "
                 >
-                  Array manipulation for dart
-                </div>
-                <div class="flex items-center">
-                  <img src="./img/star.svg" alt="" class="h-4 mr-1" />
-                  <span class="text-sm text-gray-500">13</span>
+                  Array manipulation library for dart / flutter
                 </div>
               </div>
             </a>
@@ -638,16 +703,12 @@
                     text-xl
                     2xl:text-2xl
                     leading-tight
-                    text-gray-800
+                    text-gray-600
                     font-bold
                     mb-2
                   "
                 >
-                  Vale.dev syntax for vscode
-                </div>
-                <div class="flex items-center">
-                  <img src="./img/star.svg" alt="" class="h-4 mr-1" />
-                  <span class="text-sm text-gray-500">2</span>
+                  Vale.dev syntax highlighter for vscode
                 </div>
               </div>
             </a>
@@ -700,16 +761,12 @@
                     text-xl
                     2xl:text-2xl
                     leading-tight
-                    text-gray-800
+                    text-gray-600
                     font-bold
                     mb-2
                   "
                 >
                   2D Processing API on flutter canvas
-                </div>
-                <div class="flex items-center">
-                  <img src="./img/star.svg" alt="" class="h-4 mr-1" />
-                  <span class="text-sm text-gray-500">1</span>
                 </div>
               </div>
             </a>
@@ -783,6 +840,63 @@
             >
               I co founded Puthika , a Bengali initiative to bring Audiobook and
               premium textual content experience to our continent and more .
+            </p>
+          </div>
+          <div
+            class="
+              p-8
+              w-full
+              bg-gradient-to-br
+              from-white
+              to-blue-50
+              mx-auto
+              border border-blue-100
+              rounded-md
+              shadow-sm
+              cursor-pointer
+              transition
+              duration-300
+              transform
+              hover:-translate-y-2 hover:shadow-md
+              mb-5
+            "
+          >
+            <div
+              class="
+                text-sm
+                uppercase
+                text-gray-600
+                font-bold
+                tracking-wide
+                mb-2
+              "
+            >
+              July 2021 to Present
+            </div>
+            <h3
+              class="
+                text-2xl
+                2xl:text-3xl
+                text-blue-900
+                font-extrabold
+                mb-3
+                tracking-wide
+              "
+            >
+              iOS developer (Flutter)
+            </h3>
+            <p
+              class="
+                text-sm
+                2xl:text-base
+                text-gray-500
+                font-medium
+                leading-relaxed
+              "
+            >
+              I am currently working full time as an iOS developer at
+              <span class="text-gray-700 font-bold">Rexo IT</span>
+              where I build apps according to our client's needs .
             </p>
           </div>
           <div
@@ -903,5 +1017,7 @@
         </div>
       </div>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
