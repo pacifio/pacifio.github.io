@@ -20,16 +20,13 @@ window.addEventListener("resize", function () {
 window.addEventListener("mousemove", function (event) {
   mouse.x = event.x;
   mouse.y = event.y;
+  draw();
 });
 
 window.addEventListener("keyup", function (event) {
   if (event.key === "Escape") {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
-});
-
-window.addEventListener("scroll", function () {
-  hue += 5;
 });
 
 function draw() {
@@ -43,8 +40,6 @@ function draw() {
 setupSize();
 
 function animate() {
-  draw();
-
   hue++;
 
   requestAnimationFrame(animate);
